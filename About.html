@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Care</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        <h2><a href="#" class="logo">Cancer Charity</a></h2>
+        <div class="navigation">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Contact.html">Contact</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+       <div class="content">
+
+        <div class="info">
+      <p><h2>About the cause:</h2> Donate For Cancer Survivors In India
+70% of India's poor cancer patients lose their lives due to late detection of which 15% are children. Cancer survival depends on early diagnosis and access to medical treatment which poor cancer patients cannot afford. Donate to patients suffering from cancer so that they can receive access to medical support like chemotherapy, radiation and quality nutrition. Give them a chance to fight.Over the years, medical science has significantly improved the survival rates among cancer patients, across the globe. Cancer survival in the UK has doubled in the last 40 years from 24% to 50%, as per Cancer Research UK. However, the survival rates in India for even easily detectable and/or treatable cancers are still lower when compared to those in Europe or North America.The world-wide pandemic has caused devastating interruptions in ongoing cancer treatment for scores of cancer patients. The pandemic has posed a high risk for these patients with compromised immunity, causing upstaging of disease. We have set up a special fund to ensure continuous support to cancer patients during the catastrophic COVID-19 outbreak, especially for patients who are battling Cancer. We continue to network with hospitals and treatment centers to provide them with desperately needed financial and medical support.</p>
+</div>
+</div>
+          <!--image slider start-->
+
+<div1>
+
+    <div class="slider">
+
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="5.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="6.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="7.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="8.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 2500);
+    </script>
+    </div1>
+        <!--image slider end-->
+</section>
+    
+
+<p class="cp-text" style="background:rgb(245,163,204); text-align: center; padding:5%;">
+
+    © Copyright 2021 Cancer Charity. All rights reserved.
+</body>
+</html>
